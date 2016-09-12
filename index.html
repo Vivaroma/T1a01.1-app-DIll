@@ -1,13 +1,18 @@
-Wow <b> Human</b>
-  
-   ayy 
-   
-      why
-   
-         don't 
-    
-               you 
+Hi <b>there</b> world <br><br>
+<input type=text value="wow"> <br><br>
 
-visit this neat webpage
+<input type=button value="Run Wow" onclick="{
+  myOut = document.getElementById('myArea')
+  for (myCount = 1; myCount <= 5; myCount++){
+   myOut.innerHTML += 'wow '
+   if (myCount ==3){
+    myOut.innerHTML += 'cool '
+   }
+  }
+ }"> <br><br>
 
-https://raw.githubusercontent.com/Vivaroma/T1a01.1-app-DIll/master/index.html
+
+<div id="myArea" > your output will go here </div> <br>
+<input type=button value="show myOut" onclick="{
+ alert('the variable myOut contains '+myOut.innerHTML)
+}">

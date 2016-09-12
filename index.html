@@ -1,13 +1,16 @@
 Hi <b>there</b> world <br><br>
-<input type=text value="wow"> <br><br>
+<input id="myInput" type=text value="wow"> <br><br>
 
-<input type=button value="click me" onclick="{
+<input type=button value="Click Me" onclick="{
   myOut = document.getElementById('myArea')
-  for (myCount = 1; myCount <= 5; myCount++){
-   myOut.innerHTML += 'wow '
+  myIn = document.getElementById('myInput')
+//alert(myIn.value)
+for (myCount = 1; myCount <= 5; myCount++){
+   myOut.innerHTML += myCount+' '+ myIn.value 
    if (myCount ==3){
-    myOut.innerHTML += 'cool '
+    myOut.innerHTML += ' cool '
    }
+   myOut.innerHTML += '<br>'
   }
  }"> <br><br>
 
